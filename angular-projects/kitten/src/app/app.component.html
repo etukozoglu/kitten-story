@@ -1,0 +1,18 @@
+<h1 class="col-sm-4">{{ title }}</h1>
+<div class="container">
+  <header class="title row">
+    <div class="col-sm-6 offset-sm-2">
+      <app-create-kitten (addEvent)="addKittenToList($event)"></app-create-kitten>
+    </div>
+  </header>
+
+  <div class="row file">
+    <div class="col-sm-4">
+      <app-list-kitten [kittens]="kittens" (onAdopt)="adoptKitten($event)"></app-list-kitten>
+    </div>
+  </div>
+
+    <div class="col-sm-4">
+      <app-user-kitten [myKittens]="myKittens"></app-user-kitten>
+    </div>
+</div>

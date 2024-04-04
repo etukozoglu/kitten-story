@@ -1,0 +1,23 @@
+<h2> {{title}}</h2>
+
+<div class="catForm">
+    <div>
+        <label for="name">Name : </label>
+        <input [(ngModel)]="kitten.name" type="text" id="name" required>
+    </div>
+    <div>
+        <label for="race">Race : </label>
+        <input [(ngModel)]="kitten.race" type="text" id="race">
+    </div>
+    <div>
+        <label for="birthday">Birth date : </label>
+        <input [(ngModel)]="kitten.birthDate" type="text" id="birthday">
+    </div>
+    <div>
+        <label for="picture">Picture : </label>
+        <input [(ngModel)]="kitten.image" type="text" id="picture" required>
+    </div>
+
+    <button (click)="addKittenToList()">Add a kitten</button>
+
+</div>

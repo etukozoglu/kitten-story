@@ -1,0 +1,10 @@
+<div class="title">
+    <h2>{{ title }}</h2>
+</div>
+
+<div class="row" *ngFor="let kitten of kittens">
+    <img [src]="kitten.image" alt="cat image">
+    <h3>{{kitten.name}}</h3>    
+    <button (click)="adoptKitten(kitten)">Adoptez-moi</button>
+  </div>
+
